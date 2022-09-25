@@ -4,7 +4,7 @@ import picture from '../../assets/pessoa.webp';
 
 export function HomeHero() {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <img src={picture} alt="Minha Foto" />
       <div>
         <TextContainer>
@@ -13,7 +13,7 @@ export function HomeHero() {
         </TextContainer>
 
         <InfosContainer>
-          <CodeItem>
+          <CodeItem data-aos="zoom-in">
             <span className="comment">//Minha Apresentação</span>
             <span className="purple">Infos</span> {'\u007B'}
             <div>
@@ -24,7 +24,7 @@ export function HomeHero() {
             </div>
             {'\u007D'}
           </CodeItem>
-          <CodeItem>
+          <CodeItem data-aos="zoom-in">
             <span className="purple">Cargo</span> {'\u007B'}
             <div>
               Nome: <span className="blue">Dev Front-end,</span>
